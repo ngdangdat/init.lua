@@ -7,7 +7,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
     if vim.fn.argc() == 1 then
       local parent_dir = vim.fn.fnamemodify(argv[1], ":h")
       if vim.fn.isdirectory(argv[1]) == 0 and vim.fn.isdirectory(parent_dir) == 1 then
-        vim.cmd("NERDTree" .. parent_dir)
+        vim.cmd("NERDTree " .. parent_dir)
       end
     end
   end,
