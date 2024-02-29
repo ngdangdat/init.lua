@@ -27,6 +27,8 @@ vim.api.nvim_create_autocmd("VimEnter", {
       if vim.fn.isdirectory(argv[1]) == 0 and vim.fn.isdirectory(parent_dir) == 1 then
         vim.cmd("NERDTree " .. parent_dir)
         return
+      elseif vim.fn.isdirectory(argv[1]) == 1 then
+        return
       end
     end
     vim.cmd("NERDTree " .. cwd)
