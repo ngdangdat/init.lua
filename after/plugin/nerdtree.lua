@@ -58,3 +58,12 @@ vim.keymap.set("n", "<C-b>", function()
   end
 end)
 
+
+vim.keymap.set("n", "<leader>rf", function()
+  if string.find(vim.api.nvim_buf_get_name(0), "NERD_tree_tab") == nil then
+    if vim.t.NERDTreeBufName ~= nil then
+      vim.cmd("NERDTreeFind")
+    end
+  end
+end)
+
