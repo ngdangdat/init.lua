@@ -7,6 +7,7 @@ lsp.ensure_installed({
   'ruff_lsp',
   'pyright',
   'terraformls',
+  'intelephense',
 })
 
 -- Fix Undefined global 'vim'
