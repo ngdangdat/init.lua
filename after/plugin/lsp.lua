@@ -4,7 +4,9 @@ lsp.preset("recommended")
 lsp.ensure_installed({
   'tsserver',
   'rust_analyzer',
-  'ruff_lsp'
+  'ruff_lsp',
+  'pyright',
+  'terraformls',
 })
 
 -- Fix Undefined global 'vim'
