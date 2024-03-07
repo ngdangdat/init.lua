@@ -32,10 +32,10 @@ vim.keymap.set('n', '<leader>ps', function()
 end)
 
 vim.keymap.set('n', '<leader>fd', function() 
-  builtin.find_files({ cwd = vim.fn.input("Find files in > ") })
+  builtin.find_files({ cwd = vim.fn.input("Find files in > "), search_dirs = get_search_dirs() })
 end)
 
 vim.keymap.set('n', '<leader>fg', function() 
-  builtin.git_files({ cwd = vim.fn.input("Find (git) files in > ") })
+  builtin.git_files({ cwd = vim.fn.input("Find (git) files in > "), search_dirs = get_search_dirs() })
 end)
 
