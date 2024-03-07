@@ -46,7 +46,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
   desc = "Close nvim if NERDTree is the only buffer remains",
   pattern = "*",
   callback = function()
-    if (vim.fn.winnr("$") == 1 and vim.b.NERDTree ~= nil and vim.b.NERDTree._type == "tab") then
+    if (vim.fn.winnr("$") == 1 and vim.b ~= nil and vim.b.NERDTree ~= nil and vim.b.NERDTree._type == "tab") then
       vim.cmd.q()
     end
   end,
