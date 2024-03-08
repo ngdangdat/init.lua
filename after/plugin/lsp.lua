@@ -8,6 +8,7 @@ lsp.ensure_installed({
   'pyright',
   'terraformls',
   'phpactor',
+  'clangd',
 })
 
 -- Fix Undefined global 'vim'
