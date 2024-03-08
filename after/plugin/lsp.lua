@@ -7,7 +7,7 @@ lsp.ensure_installed({
   'ruff_lsp',
   'pyright',
   'terraformls',
-  'intelephense',
+  'phpactor',
 })
 
 -- Fix Undefined global 'vim'
