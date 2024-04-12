@@ -52,7 +52,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
   end,
 })
 
-vim.keymap.set("n", "<C-b>", function()
+vim.keymap.set("n", "<C-n>", function()
   if vim.fn.exists(":NERDTreeToggle") then
     vim.cmd("NERDTreeToggle " .. get_nerd_dir())
   end
