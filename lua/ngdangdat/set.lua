@@ -1,4 +1,5 @@
 vim.opt.number = true
+vim.opt.relativenumber = true
 vim.opt.ruler = true
 vim.opt.list = true
 vim.opt.listchars = { eol = '¬', tab = '>·', trail = '~', extends = '>', precedes = '<', space = '·'}
