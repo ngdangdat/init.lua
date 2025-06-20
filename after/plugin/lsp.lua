@@ -4,7 +4,7 @@ lsp.preset("recommended")
 lsp.ensure_installed({
   'ts_ls',
   'rust_analyzer',
-  'ruff_lsp',
+  'ruff',
   'pyright',
   'terraformls',
   'phpactor',
