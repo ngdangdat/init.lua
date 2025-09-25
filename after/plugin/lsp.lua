@@ -9,6 +9,7 @@ lsp.ensure_installed({
   'terraformls',
   'phpactor',
   'clangd',
+  'gopls',
 })
 
 -- Fix Undefined global 'vim'
