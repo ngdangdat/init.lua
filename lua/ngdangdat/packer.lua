@@ -57,5 +57,12 @@ return require('packer').startup(function(use)
       {'Xuyuanp/nerdtree-git-plugin'}
     }
   }
+  -- add lazygit
+  use({
+    'kdheepak/lazygit.nvim',
+    requires = {
+      {'nvim-lua/plenary.nvim'}
+    },
+  })
 end)
 
