@@ -12,7 +12,7 @@ return require('packer').startup(function(use)
       {'nvim-lua/plenary.nvim'}
     }
   }
-  use ('0xstepit/flow.nvim', {
+  use ('folke/tokyonight.nvim', {
     lazy = false,
     priority = 1000,
     opts = {},

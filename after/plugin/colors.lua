@@ -1,5 +1,5 @@
 -- setup flow
-local color = color or "flow"
+local color = color or "tokyonight"
 require(color).setup()
 vim.cmd.colorscheme(color)
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
