@@ -57,9 +57,20 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-lsp.setup()
+require('lspconfig').rust_analyzer.setup({
+    -- Custom settings for rust-analyzer can go here
+    settings = {
+        ['rust-analyzer'] = {
+            -- Example setting: show lints from Clippy
+            checkOnSave = {
+                command = "clippy",
+            },
+        },
+    },
+})
 
 vim.diagnostic.config({
     virtual_text = true
 })
 
+lsp.setup()
