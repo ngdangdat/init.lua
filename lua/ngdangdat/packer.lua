@@ -12,11 +12,6 @@ return require('packer').startup(function(use)
       {'nvim-lua/plenary.nvim'}
     }
   }
-  use ('folke/tokyonight.nvim', {
-    lazy = false,
-    priority = 1000,
-    opts = {},
-  })
   use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
   use {
       "ThePrimeagen/harpoon",
@@ -50,5 +45,7 @@ return require('packer').startup(function(use)
       {'nvim-lua/plenary.nvim'}
     },
   })
+  use { "ellisonleao/gruvbox.nvim" }
+  vim.g.colorscheme = "gruvbox"
 end)
 
