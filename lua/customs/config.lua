@@ -20,5 +20,8 @@ vim.api.nvim_create_autocmd("VimEnter", {
     if arg and arg ~= "" and vim.fn.isdirectory(arg) == 1 then
       vim.cmd("cd " .. vim.fn.fnameescape(arg))
     end
+    if arg and arg == "" then
+      vim.cmd("Ex .")
+    end
   end,
 })

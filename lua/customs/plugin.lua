@@ -40,6 +40,10 @@ return {
     }
   },
   {
+    "neovim/nvim-lspconfig",
+  },
+  -- colorscheme
+  {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
